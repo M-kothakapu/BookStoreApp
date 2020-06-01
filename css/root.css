@@ -1,0 +1,169 @@
+body {
+  overflow: auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+a {
+  color: #fefefe;
+}
+p {
+  font-family: open sans-serif;
+}
+a:hover {
+  color: #fefefe;
+}
+
+.logo {
+  font-family: Georgia;
+  font-weight: bold;
+}
+
+.navbar {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 80px;
+}
+.navbar .navbar-brand {
+  font-size: 30px;
+}
+
+.navbar .nav-link {
+  font-size: 20px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 50px;
+    padding-left: 0px;
+  }
+}
+
+.hero-image {
+  background-image: url("https://raw.githubusercontent.com/Firebrand/imageshare/master/kvothebooks.jpg");
+
+  /* Set a specific height */
+  height: 620px;
+  margin-top: -80px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-container {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 250px;
+  position: relative;
+  padding: 15px;
+}
+
+.hero-title {
+  overflow-wrap: break-word;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.hero-button {
+  background-color: #28a745;
+  border: none;
+  color: #fefefe;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  width: 180px;
+  display: inline-block;
+  font-size: 16px;
+  align-self: center;
+  border-radius: 5px;
+}
+
+.app-footer {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0);
+  height: 80px;
+}
+
+.main-container {
+  height: 100%;
+  overflow: auto;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #c0c0c0;
+  height: 50px;
+  margin: 20px 0 30px;
+}
+
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #c0c0c0;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #c0c0c0;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #c0c0c0;
+}
+
+.cardgroup-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px 30px;
+  margin-bottom: 10px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 120px auto;
+  height: 178px;
+  border-radius: 0px;;
+}
+
+.card-body {
+  padding: 0.75rem;
+}
+
+.card-img {
+  background-color: #d8d8d8;
+}
+
+.book-title {
+  font-size: 1.2em;
+}
+
+.book-subtitle {
+  font-size: 0.7em;
+}
+.card {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 992px) {
+  .cardgroup-container {
+    grid-template-columns: auto;
+    grid-gap: 0;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    border-radius: 0px;
+  }
+
+  .hero-image {
+    height: 100vh;
+  }
+  .input-group {
+    width: 75% !important;
+  }
+  .hero-title {
+    font-size: 2em;
+  }
+}

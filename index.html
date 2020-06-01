@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kvothe's Books</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/root.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">Kvothe's Books</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <a class="hamburger" href="#">&#9776;</a>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >News <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-image">
+      <div class="container ">
+        <div class="col-sm-5  hero-container">
+          <h3 class="hero-title">
+            You haven't read anything yet.
+          </h3>
+          <p>
+            They say outside of a dog, a book is man's best friend (inside of a
+            dog it's too dark to read). Come in, chat with us, share your
+            favorite books & films and we'll introduce you to some of the
+            greatest friends you'll ever know.
+          </p>
+          <div class="row justify-content-center">
+            <button class="hero-button">Come visit us!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row search-container">
+        <div class="m-6 w-25 input-group">
+          <input
+            type="text"
+            class="form-control "
+            id="search-input"
+            placeholder="Find a book!"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-success"
+              type="submit"
+              onclick="getBooksBySearch()"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="cardgroup-container" id="books-container"></div>
+    </div>
+    <div class="navbar sticky-bottom app-footer">
+      <div class="container">
+        <span>2020 Created by Manasa!!</span>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
